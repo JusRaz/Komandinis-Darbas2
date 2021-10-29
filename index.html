@@ -9,14 +9,152 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <style>
+            .card{
+                display: inline-block;
+                margin: 10px;
+                background-color: aqua;
+            }
+            .card:hover{
+                border: solid 5px #FC5185;
+                transition: border-width 0.6s linear;
+            }
 
-    <title>Hello, world!</title>
+
+        </style>
+
+    <title>Hello world!</title>
 </head>
 
 <body>
 
     <header></header>
-    <main></main>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <!-- vaisiai -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh3.googleusercontent.com/proxy/tsFAKuOnUCCBQx9S3rMizE3ti7C5NVKGIHEV6W-jAi5grdpPsliJnxCEG-u2ekouS3Mp9tCMQV4hwwASsCXEFnu9bqMWl49xEmsIjgSJ" class="card-img-top" alt="Kivis">
+                        <div class="card-body">
+                          <h5 class="card-title">Kivis</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="obuolys">
+                        <div class="card-body">
+                          <h5 class="card-title">Obuolys</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://greenwayeg.com/wp-content/uploads/2019/07/12-grapefruit-300x300.jpg" class="card-img-top" alt="Greifrutas">
+                        <div class="card-body">
+                          <h5 class="card-title">Greifrutas</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://tadoukis.lt/wp-content/uploads/2020/08/Prunus-avium-Viktorija-tresne-tado-ukis-300x300.jpg" class="card-img-top" alt="Vysnios">
+                        <div class="card-body">
+                          <h5 class="card-title">Vysnios</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://www.leonsfruitshop.co.uk/wp-content/uploads/2008/11/pinesedited-300x300.jpg" class="card-img-top" alt="Ananasas">
+                        <div class="card-body">
+                          <h5 class="card-title">Ananasas</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://tadoukis.lt/wp-content/uploads/2020/08/Kolonin%C4%97-slyva-Goldust-300x300.jpg" class="card-img-top" alt="Slyvos">
+                        <div class="card-body">
+                          <h5 class="card-title">Slyvos</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://kletele.lt/wp-content/uploads/2021/04/polka-braskes-300x300.jpg" class="card-img-top" alt="Braskes">
+                        <div class="card-body">
+                          <h5 class="card-title">Braskes</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://tadoukis.lt/wp-content/uploads/2020/08/Kolonin%C4%97-kriau%C5%A1%C4%97-Obelisk-300x300.jpg" class="card-img-top" alt="Kriauses">
+                        <div class="card-body">
+                          <h5 class="card-title">Kriauses</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+                            <!-- darzoves -->
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://www.emiliafoods.it/wp-content/uploads/2018/05/spinach-300x300.png" class="card-img-top" alt="Spinatai">
+                        <div class="card-body">
+                          <h5 class="card-title">Spinatai</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://www.emiliafoods.it/wp-content/uploads/2018/05/broccoli-300x300.png" class="card-img-top" alt="Brokoliai">
+                        <div class="card-body">
+                          <h5 class="card-title">Brokoliai</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://www.daylesford.com/wp-content/uploads/2020/10/Brussels-Sprouts-1032x1032-1-300x300.jpg" class="card-img-top" alt="Briuselio kopustai">
+                        <div class="card-body">
+                          <h5 class="card-title">Briuselio kopustai</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://www.genesisseeds.com/wp-content/uploads/2021/03/genesisCucumber_Green18-300x300.jpg" class="card-img-top" alt="Agurkas">
+                        <div class="card-body">
+                          <h5 class="card-title">Agurkas</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Skaityti placiau</a>
+                        </div>
+                      </div>
+
+
+                      
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+       
+
+
+    </main>
     <footer></footer>
 
 
